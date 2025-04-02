@@ -4,71 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <section>
-        <nav>
-            <img src="./assets/FES.svg" alt="Logo">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#discord">Discord</a></li>
-                <li><a href="#contact">Contact</a></li>
-
-            </ul>
-        </nav>
-        <header>
-            <div>
-                <h1>Best Place to Learn Frontend</h1>
-                <p>Going from beginner to pro in a simplified process</p>
-                <button>Start Now</button>
-            </div>
-            <figure>
-                <img src="./assets/laptop.png" alt="Home page image">
-            </figure>
-        </header>
+      <nav>
+        <img src="./assets/FES.svg" class="logo" alt="Logo" />
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#discord">Discord</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <header>
+        <div class="row">
+          <div>
+            <h1>Best Place to Learn Frontend</h1>
+            <p class="subheader">
+              Going from beginner to pro in a simplified process
+            </p>
+            <button>Start Now</button>
+          </div>
+          <figure>
+            <img src="./assets/laptop.png" alt="Home page image" />
+          </figure>
+        </div>
+      </header>
     </section>
 
     <main>
-        <section id="about">
-            <h2>About</h2>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
-            </div>
-            <figure>
-                <img src="./assets/about.jpg" alt="About page image">
-            </figure>
-        </section>
-        <section id="discord">
-            <h2>Discord</h2>
-            <div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At magni vitae sint ducimus nobis, culpa, eius amet doloribus totam blanditiis quos mollitia illum dignissimos id iusto. Quo delectus nobis necessitatibus?</p>
-            </div>
-            <figure>
-                <img src="./assets/discord.png" alt="Discord page image">
-            </figure>
+      <section id="about">
+        <h2>About</h2>
+        <div class="row">
+        <div class="section_description">
+        <div class="section_description--wrapper">
+          <p class="section_description--para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Quisquam, voluptatibus.
+          </p>
+          <p class="section_description--para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Quisquam, voluptatibus.
+          </p>
+        </div>
+        <figure class="about_image--wrapper">
+          <img src="./assets/about.jpg" alt="About page image" />
+        </figure>
+        </div>
+        </div>
+      </section>
 
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <form action="">
-                <input type="text" placeholder="jane@example.com"/>
-                <span>Message</span>
-                <textarea type="text" placeholder="jane@example.com"></textarea>
+      <section id="discord">
+        <h2>Discord</h2>
+        <div class="row">
+        <div class="section_description">
+        <div class="section_description--wrapper">
+          <p class="section_description--para">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At magni
+            vitae sint ducimus nobis, culpa, eius amet doloribus totam
+            blanditiis quos mollitia illum dignissimos id iusto. Quo delectus
+            nobis necessitatibus?
+          </p>
+          <p class="section_description--para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Quisquam, voluptatibus.
+          </p>
+        </div>
+        <figure class="about_image--wrapper">
+          <img src="./assets/discord.png" alt="Discord page image" />
+        </figure>
+        </div>
+        </div>
+      </section>
 
-            </form>
-           
-
-        </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="">
+          <input type="email" placeholder="jane@example.com" />
+          <span>Message</span>
+          <textarea type="text" placeholder="Input Message Here!"></textarea>
+          <button>Contact Us!</button>
+        </form>
+      </section>
     </main>
     <footer>
-        <img src="./assets/FES.svg" alt="Logo">
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <p>Copyright Briggs Industries</p>
+      <img class="footer_logo" src="./assets/FES.svg" alt="Logo" />
+      <div class="footer_links">
+        <a class="footer_link" href="#about">About</a>
+        <a class="footer_link" href="#discord">Discord</a>
+        <a class="footer_link" href="#contact">Contact</a>
+      </div>
+      <p>Copyright Briggs Industries</p>
     </footer>
   </body>
 </html>
